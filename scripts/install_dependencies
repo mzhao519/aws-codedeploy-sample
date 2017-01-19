@@ -41,11 +41,11 @@ cp -r /tmp/$TOMCAT_CORE_UNPACKED_DIRNAME/* $CATALINA_HOME
 { which java; } || { yum install java; }
 
 #Install Java 8
-_java=java;
-version=$("$_java" -version 2>&1 | awk -F '"' '/version/ {print $2}')
-if [[  "$version" < "1.8" ]]; then
-   yum remove java
-   yum install java-1.8.0
+TMP_JAVA=java;
+TMP_JAVA_VERSION=$("$TMP_JAVA" -version 2>&1 | awk -F '"' '/version/ {print $2}')
+if [[  "$TMP_JAVA_VERSION" < "1.8" ]]; then
+   yes | yum remove java
+   yes | yum install java-1.8.0
 fi
 
 # Create the service init.d script
