@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-servlet test jsp file
+simon & linda
 </body>
 </html>
