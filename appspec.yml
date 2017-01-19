@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /zip/websample-0.0.1-SNAPSHOT.war
+  - source: /target/websample-0.0.1-SNAPSHOT.war
     destination: /tmp/codedeploy-deployment-staging-area/
   - source: /scripts/configure_http_port.xsl
     destination: /tmp/codedeploy-deployment-staging-area/
