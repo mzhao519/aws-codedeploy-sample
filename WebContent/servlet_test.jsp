@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-simon & linda
+jdbc test result: ${jdbcTestResult}
+
 </body>
 </html>

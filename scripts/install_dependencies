@@ -38,7 +38,7 @@ tar xzf $TOMCAT_CORE_TAR_FILENAME
 cp -r /tmp/$TOMCAT_CORE_UNPACKED_DIRNAME/* $CATALINA_HOME
 
 # Install Java if not yet installed
-{ which java; } || { yum install java -y; }
+{ which java; } || { yum install java-1.8.0 -y; }
 
 #Install Java 8
 TMP_JAVA=java;
